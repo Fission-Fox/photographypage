@@ -17,7 +17,7 @@ export default function Images() {
           <div className="flex gap-5 ">
             <Image
               src={adventure}
-              className="w-[50%] sm:w-[275px] h-[193px]"
+              className="w-[50%] sm:w-[275px] h-[193px] "
               style={{ objectFit: "cover" }}
               alt=""
             />
