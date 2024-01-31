@@ -34,7 +34,7 @@ export default function Vanlife() {
           </div>
         </div>
 
-        <div className="bg-[#FAFAFA] w-[90%] sm:w-[572px] flex flex-col items-center">
+        <div className="bg-[#FAFAFA] w-[90%] sm:w-[572px] flex flex-col items-center pb-6">
           <div className="text-[27px] text-center mt-20">
             Where we are headed!
           </div>
