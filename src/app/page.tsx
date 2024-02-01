@@ -2,6 +2,7 @@
 import Herosection from "@/component/herosection";
 import Images from "@/component/images";
 import Realword from "@/component/realword";
+import Vanlife from "@/component/vanlife";
 import { Box } from "@mui/material";
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Herosection />
       <Images />
       <Realword />
+      <Vanlife />
     </Box>
   );
 }
