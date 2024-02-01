@@ -10,7 +10,7 @@ export default function Layout({ children }: Prop) {
   return (
     <Box>
       <Header />
-      <div className="mt-20"></div>
+      <div className="mt-40"></div>
       {children}
       <Footer />
     </Box>
