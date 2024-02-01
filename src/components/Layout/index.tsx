@@ -1,5 +1,6 @@
 import "@/assets/css/tailwind.css";
 import { Box } from "@mui/material";
+import Footer from "../Footer";
 import Header from "../Header";
 
 type Prop = {
@@ -11,6 +12,7 @@ export default function Layout({ children }: Prop) {
       <Header />
       <div className="mt-20"></div>
       {children}
+      <Footer />
     </Box>
   );
 }
