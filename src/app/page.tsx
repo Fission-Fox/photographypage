@@ -1,6 +1,7 @@
 "use client";
 import Herosection from "@/component/herosection";
 import Images from "@/component/images";
+import Portfolio from "@/component/portfolio";
 import Realword from "@/component/realword";
 import Text from "@/component/text";
 import Vanlife from "@/component/vanlife";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Realword />
       <Vanlife />
       <Text />
+      <Portfolio />
     </Box>
   );
 }
