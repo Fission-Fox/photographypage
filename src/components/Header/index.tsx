@@ -15,7 +15,7 @@ export default function Header() {
       if (currentScroll > lastScroll && !scrollingDown) {
         // Scroll down, hide the header
         setScrollingDown(true);
-      } else if (currentScroll < lastScroll && scrollingDown) {
+      } else if (currentScroll < 1 && scrollingDown) {
         // Scroll up, show the header
         setScrollingDown(false);
       }
@@ -31,18 +31,18 @@ export default function Header() {
   }, [lastScroll, scrollingDown]);
 
   return (
-    <nav className="!hidden md:!flex">
+    <nav className="!hidden md:!flex fixed" style={{ zIndex: 5 }}>
       <div
         id="scroll-header"
         className={`flex items-center justify-center gap-10 xl:gap-20  py-7 w-full fixed transition-all duration-300 top-0
-                text-[14px] lg:text-[20px]
+                text-[0.6875rem] lg:text-[20px] font-light
             ${
               scrollingDown
                 ? "bg-[rgba(255,255,255,0.8)] bg-opacity-20 transform translate-y-0"
                 : "bg-transparent"
             }`}
       >
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
+        <h1 className="text-[#3c3c3c]   cursor-pointer">Home</h1>
         <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
         <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
         <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>

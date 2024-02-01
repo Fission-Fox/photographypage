@@ -8,7 +8,7 @@ export default function Portfolio() {
       <hr />
 
       <div className="flex justify-center pt-28">
-        <div className="hover:bg-black hover:text-white text-[10px] sm:text-[20px] px-3 sm:px-14 py-4 border">
+        <div className="hover:bg-black hover:text-white text-[10px] sm:text-[20px] px-3 sm:px-14 py-4 border !font-light">
           <button>EXPLORE MY PORTFOLIO</button>
         </div>
       </div>

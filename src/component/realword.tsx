@@ -4,7 +4,17 @@ import stephan from "@/assets/Image/stephan1.jpg";
 export default function Realword() {
   return (
     <div className="mt-20 ">
-      <div className="text-center">REAL WORDS FROM MY CLIENTS</div>
+      <div
+        className="text-center font-light text-[0.6875rem]"
+        style={{
+          fontFamily: "Over",
+          wordSpacing: "0em",
+          letterSpacing: "0.2em",
+          lineHeight: "1.87em",
+        }}
+      >
+        REAL WORDS FROM MY CLIENTS
+      </div>
       <div className="flex justify-center">
         <div className="bg-[#FAFAFA] w-[80%] flex flex-wrap justify-evenly pt-28 pb-28 mt-20">
           <div>
@@ -16,8 +26,13 @@ export default function Realword() {
             />
           </div>
           <div className="w-[90%] sm:w-[451px] ">
-            <div className="text-[27px] text-center mt-4">Carla & Stephan</div>
-            <div className="text-center mt-10">
+            <div
+              className="text-[27px] text-center mt-4"
+              style={{ fontFamily: "Sorts Mill Goudy" }}
+            >
+              Carla & Stephan
+            </div>
+            <div className="text-center mt-10 text-[#3c3c3c] font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
               excepturi quia. Omnis maxime, doloremque inventore rerum repellat
               laudantium fuga, nam facilis a incidunt, at accusantium molestias
@@ -27,7 +42,7 @@ export default function Realword() {
               dicta.
             </div>
 
-            <div className="text-center mt-10">
+            <div className="text-center mt-10 text-[#3c3c3c] font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
               excepturi quia. Omnis maxime, doloremque inventore rerum repellat
               laudantium fuga, nam facilis a incidunt, at accusantium molestias

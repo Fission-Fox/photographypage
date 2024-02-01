@@ -9,7 +9,15 @@ import dansarah from "@/assets/Image/dan&sarah1.jpg";
 export default function Images() {
   return (
     <div className="mt-32">
-      <div className="text-center">
+      <div
+        className="text-center font-light text-[0.6875rem]"
+        style={{
+          fontFamily: "Over",
+          wordSpacing: "0em",
+          letterSpacing: "0.2em",
+          lineHeight: "1.87em",
+        }}
+      >
         FEATURED POSTS FROM WEDDINGS, ADVENTURES AND PORTRAITS
       </div>
       <div className="flex flex-wrap items-center justify-center gap-4 mt-16 px-2">
@@ -17,13 +25,13 @@ export default function Images() {
           <div className="flex gap-5 ">
             <Image
               src={adventure}
-              className="w-[50%] sm:w-[275px] h-[193px] "
+              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
               style={{ objectFit: "cover" }}
               alt=""
             />
             <Image
               src={sarahdan}
-              className="w-[50%] sm:w-[275px] h-[193px]"
+              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
               style={{ objectFit: "cover" }}
               alt=""
             />
@@ -31,6 +39,7 @@ export default function Images() {
           <div className="mt-5">
             <Image
               src={photographer}
+              className="hover:scale-95 transition duration-700 cursor-pointer"
               alt=""
               style={{ width: "572px", height: "382px", objectFit: "cover" }}
             />
@@ -40,6 +49,7 @@ export default function Images() {
           <div>
             <Image
               src={tintypes}
+              className="hover:scale-95 transition duration-700 cursor-pointer"
               style={{ width: "572px", height: "382px", objectFit: "cover" }}
               alt=""
             />
@@ -47,13 +57,13 @@ export default function Images() {
           <div className="flex gap-4 mt-5">
             <Image
               src={nathan}
-              className="w-[50%] sm:w-[275px] h-[193px]"
+              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer "
               style={{ objectFit: "cover" }}
               alt=""
             />
             <Image
               src={dansarah}
-              className="w-[50%] sm:w-[275px] h-[193px]"
+              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
               style={{ objectFit: "cover" }}
               alt=""
             />
