@@ -18,7 +18,7 @@ export default function Love() {
         <div className="  bg-[#FAFAFA] text-[#3C3C3CB3] w-[628px] h-[220] sm:h-[420px] flex justify-center m-auto px-3 sm:px-0">
           <div>
             <h2
-              className="text-[30px] mt-6 mb-12 md:mb-14 "
+              className="text-[30px] mt-20 mb-12 md:mb-8 "
               style={{
                 fontFamily: "Sorts Mill Goudy",
                 fontSize: "1.375rem",
@@ -73,7 +73,7 @@ export default function Love() {
         <div className="  bg-[#FAFAFA] text-[#3C3C3CB3] w-[628px] h-[220] sm:h-[420px] flex justify-center m-auto px-3 sm:px-0">
           <div>
             <h2
-              className="text-[30px] mt-6 mb-12 md:mb-14 "
+              className="text-[30px] mt-20 mb-12 md:mb-14 "
               style={{
                 fontFamily: "Sorts Mill Goudy",
                 fontSize: "1.375rem",
@@ -144,7 +144,7 @@ export default function Love() {
         <div className="  bg-[#FAFAFA] text-[#3C3C3CB3] w-[628px] h-[220] sm:h-[420px] flex justify-center m-auto px-3 sm:px-0">
           <div>
             <h2
-              className="text-[30px] mt-6 mb-12 md:mb-14 "
+              className="text-[30px] mt-20 mb-12 md:mb-14 "
               style={{
                 fontFamily: "Sorts Mill Goudy",
                 fontSize: "1.375rem",
