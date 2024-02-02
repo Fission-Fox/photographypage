@@ -3,14 +3,15 @@ import React from "react";
 import stephan from "@/assets/Image/stephan1.jpg";
 export default function Realword() {
   return (
-    <div className="mt-20 ">
+    <div className="mt-20 !font-normal !text-[#3c3c3c]">
       <div
-        className="text-center font-light text-[0.6875rem]"
+        className="text-center "
         style={{
           fontFamily: "Over",
           wordSpacing: "0em",
           letterSpacing: "0.2em",
           lineHeight: "1.87em",
+          fontSize: "1.375rem",
         }}
       >
         REAL WORDS FROM MY CLIENTS

@@ -20,53 +20,62 @@ export default function Images() {
       >
         FEATURED POSTS FROM WEDDINGS, ADVENTURES AND PORTRAITS
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-4 mt-16 px-2">
+      <div className="flex flex-wrap items-center justify-center gap-1 lg:gap-4 mt-16 px-2">
         <div className="w-[90%] sm:w-auto">
-          <div className="flex gap-5 ">
-            <Image
-              src={adventure}
-              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
-              style={{ objectFit: "cover" }}
-              alt=""
-            />
-            <Image
-              src={sarahdan}
-              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
-              style={{ objectFit: "cover" }}
-              alt=""
-            />
+          <div className="flex gap-1 lg:gap-5 ">
+            <div className="w-[50%] md:w-[297px] h-[150px] md:h-[208px]">
+              <Image
+                src={adventure}
+                className="w-[100%] h-[100%] hover:scale-95 transition duration-700 cursor-pointer"
+                style={{ objectFit: "cover" }}
+                alt=""
+              />
+            </div>
+            <div className="w-[50%] md:w-[297px] h-[150px] md:h-[208px]">
+              <Image
+                src={sarahdan}
+                className="w-[100%] h-[100%] hover:scale-95 transition duration-700 cursor-pointer"
+                style={{ objectFit: "cover" }}
+                alt=""
+              />
+            </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-1 lg:mt-5 w-[100%] md:w-[600px] lg:w-[618px] h-[200px] md:h-[413px]">
             <Image
               src={photographer}
-              className="hover:scale-95 transition duration-700 cursor-pointer"
+              className="hover:scale-95 transition duration-700 cursor-pointer w-[100%] h-[100%]  object-cover"
               alt=""
-              style={{ width: "572px", height: "382px", objectFit: "cover" }}
+              // style={{  objectFit: "cover" }}
             />
           </div>
         </div>
-        <div className="w-[90%] sm:w-auto">
-          <div>
+
+        <div className="w-[90%] sm:w-auto ">
+          <div className=" w-[100%] md:w-[600px] lg:w-[618px] h-[200px] md:h-[413px]">
             <Image
               src={tintypes}
-              className="hover:scale-95 transition duration-700 cursor-pointer"
-              style={{ width: "572px", height: "382px", objectFit: "cover" }}
+              className="hover:scale-95 transition duration-700 cursor-pointer w-[100%] h-[100%]  object-cover"
+              // style={{  objectFit: "cover" }}
               alt=""
             />
           </div>
-          <div className="flex gap-4 mt-5">
-            <Image
-              src={nathan}
-              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer "
-              style={{ objectFit: "cover" }}
-              alt=""
-            />
-            <Image
-              src={dansarah}
-              className="w-[50%] sm:w-[275px] h-[193px] hover:scale-95 transition duration-700 cursor-pointer"
-              style={{ objectFit: "cover" }}
-              alt=""
-            />
+          <div className="flex gap-1 lg:gap-5 mt-1 lg:mt-5">
+            <div className="w-[50%] md:w-[297px] h-[150px] md:h-[208px]">
+              <Image
+                src={nathan}
+                className="w-[100%] h-[100%] hover:scale-95 transition duration-700 cursor-pointer"
+                style={{ objectFit: "cover" }}
+                alt=""
+              />
+            </div>
+            <div className="w-[50%] md:w-[297px] h-[150px] md:h-[208px]">
+              <Image
+                src={dansarah}
+                className="w-[100%] h-[100%] hover:scale-95 transition duration-700 cursor-pointer"
+                style={{ objectFit: "cover" }}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
