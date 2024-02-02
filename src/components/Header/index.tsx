@@ -1,9 +1,8 @@
 "use client";
 // import LogoLight from "@/assets/images/logo-light.png";
-import Link from "next/link";
-import Image from "next/image";
 import logo from "@/assets/Image/designpartnerlogo1.png";
-import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 export default function Header() {
   const [lastScroll, setLastScroll] = useState(0);
   const [scrollingDown, setScrollingDown] = useState(false);
