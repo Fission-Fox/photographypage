@@ -10,7 +10,8 @@ export default function Layout({ children }: Prop) {
   return (
     <Box>
       <Header />
-      <div className="mt-40"></div>
+
+      <div className="hidden md:flex mt-40"></div>
       {children}
       <Footer />
     </Box>
