@@ -1,8 +1,8 @@
 import { createTheme } from "@mui/material/styles";
-import { Exo, Inter, Open_Sans, Poppins } from "next/font/google";
+import { Inter, Open_Sans, Overpass, Poppins } from "next/font/google";
 
-const exo = Exo({
-  weight: ["300", "400", "500", "600", "700", "800"],
+const exo = Overpass({
+  weight: ["100", "200", "300", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });

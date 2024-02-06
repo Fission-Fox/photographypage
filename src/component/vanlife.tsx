@@ -15,8 +15,18 @@ export default function Vanlife() {
 
       <div className="flex justify-center flex-wrap gap-20 mt-32">
         <div className="w-[90%] sm:w-[459px]">
-          <div className="text-[27px]">Love & vanlife</div>
-          <div className="mt-8">
+          <div
+            className="text-[1.375rem]"
+            style={{
+              fontFamily: "Sorts Mill Goudy",
+              fontWeight: "lighter",
+              letterSpacing: "0.01em",
+              lineHeight: "1.3em",
+            }}
+          >
+            Love & vanlife
+          </div>
+          <div className="mt-8 text-[#3c3c3c] font-light">
             My amazing girlfriend Kathryn and I love to travel. We are both
             photographers, red heads, and adventurers! Seattle is our home but
             we shoot all over the country, and spend part of the year in the
@@ -35,24 +45,27 @@ export default function Vanlife() {
         </div>
 
         <div className="bg-[#FAFAFA] w-[90%] sm:w-[572px] flex flex-col items-center pb-6">
-          <div className="text-[27px] text-center mt-20">
+          <div
+            style={{ fontFamily: "Sorts Mill Goudy" }}
+            className="text-[1.375rem] text-center mt-20"
+          >
             Where we are headed!
           </div>
-          <div className="mt-20">
+          <div className="mt-20 text-[16px] font-light">
+            <div className="">November</div>
+            <div>Portland Oregon</div>
+          </div>
+
+          <div className="mt-8 text-[16px] font-light">
             <div>November</div>
             <div>Portland Oregon</div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 text-[16px] font-light">
             <div>November</div>
             <div>Portland Oregon</div>
           </div>
-
-          <div className="mt-8">
-            <div>November</div>
-            <div>Portland Oregon</div>
-          </div>
-          <div className="mt-8">
+          <div className="mt-8 text-[16px] font-light">
             <div>November</div>
             <div>Portland Oregon</div>
           </div>
