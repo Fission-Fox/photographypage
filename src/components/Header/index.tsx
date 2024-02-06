@@ -30,7 +30,7 @@ export default function Header() {
   }, [lastScroll, scrollingDown]);
 
   return (
-    <nav className="!hidden md:!flex fixed" style={{ zIndex: 5 }}>
+    <nav className="!hidden md:!flex fixed " style={{ zIndex: 5 }}>
       <div
         id="scroll-header"
         className={`flex items-center justify-center gap-10 xl:gap-20  py-7 w-full fixed transition-all duration-300 top-0
@@ -41,18 +41,18 @@ export default function Header() {
                 : "bg-transparent"
             }`}
       >
-        <h1 className="text-[#3c3c3c]   cursor-pointer">Home</h1>
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
+        <h1 className="text-[#3c3c3c]   cursor-pointer ">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
         <Image
           src={logo}
           className="w-[139px] h-[139px] object-cover "
           alt=""
         />
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
-        <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
+        <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline">Home</h1>
       </div>
     </nav>
   );

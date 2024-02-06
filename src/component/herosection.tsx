@@ -28,7 +28,7 @@ export default function Herosection() {
             style={{
               objectFit: "cover",
               height: "100vh",
-              position: "absolute",
+              width: "100%",
             }}
           />
         </div>
