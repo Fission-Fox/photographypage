@@ -5,11 +5,11 @@ import Temporaydrawer from "./temporaydrawer";
 
 export default function Mobilenav() {
   return (
-    <nav className="flex  items-center md:hidden absolute top-[30%] left-12">
-      <div className=" pt-16 w-48">
-        <Image src={logo} className="object-cover " alt="" />
+    <nav className="flex  items-center md:hidden absolute top-[40%] right-5">
+      <div>
+        <Image src={logo} className="object-cover w-40 " alt="" />
       </div>
-      <div className="">
+      <div className="ml-auto sm:ml-60">
         <Temporaydrawer />
       </div>
     </nav>

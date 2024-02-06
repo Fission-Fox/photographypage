@@ -46,14 +46,14 @@ export default function Header() {
           <h1 className="text-[#3c3c3c]  cursor-pointer">HOME</h1>
           <h1 className="text-[#3c3c3c]  cursor-pointer">MY STORY</h1>
           <h1 className="text-[#3c3c3c]  cursor-pointer">PORTFOLIO</h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer">JOURNAL</h1>
+
           <Image
             src={logo}
             className="w-[139px] h-[139px] object-cover "
             alt=""
           />
-          <h1 className="text-[#3c3c3c]  cursor-pointer">TINTYPES</h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer">INFO</h1>
+
+          <h1 className="text-[#3c3c3c]  cursor-pointer">PRICING</h1>
           <h1 className="text-[#3c3c3c]  cursor-pointer">CONTACT</h1>
         </div>
       </nav>

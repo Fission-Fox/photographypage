@@ -64,17 +64,18 @@ export default function TemporaryDrawer() {
               <li className="flex justify-between">
                 PORTFOLIO <ArrowRightIcon />
               </li>
-              <hr className="border-gray-500 w-48" />
+              {/* <hr className="border-gray-500 w-48" />
               <li className="flex justify-between">
                 JOURNAL <ArrowRightIcon />
-              </li>
-              <hr className="border-gray-500 w-48" />
+              </li> */}
+              {/* <hr className="border-gray-500 w-48" />
               <li className="flex justify-between">
                 TINTYPES <ArrowRightIcon />{" "}
-              </li>
+              </li> */}
               <hr className="border-gray-500 w-48" />
               <li className="flex justify-between">
-                INFO <ArrowRightIcon />
+                PRICING
+                <ArrowRightIcon />
               </li>
               <hr className="border-gray-500 w-48" />
               <li>CONTACT</li>
@@ -102,7 +103,7 @@ export default function TemporaryDrawer() {
         <React.Fragment key={anchor}>
           <Button
             onClick={toggleDrawer(anchor, true)}
-            sx={{ color: "black", marginTop: "80px" }}
+            sx={{ color: "black", marginTop: "2px", fontSize: "12px" }}
           >
             MENU
           </Button>
