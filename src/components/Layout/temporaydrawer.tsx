@@ -47,10 +47,10 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="w-[90%] sm:w-[700px]  ">
-          <div className="flex justify-between ">
-            <Image className="w-[80px] ml-14 " src={logo} alt="" />
-            <button>CLOSE</button>
+        <div className="w-[90%] sm:w-[700px] md:hidden ml-3 ">
+          <div className="flex justify-between">
+            <Image className="w-[100px] " src={logo} alt="" />
+            <button className="mr-4">CLOSE</button>
           </div>
 
           <div className="">
@@ -86,7 +86,7 @@ export default function TemporaryDrawer() {
             <TwitterIcon />
           </div>
           <div>
-            <p className="text-[12px] px-8 p-6 flex">
+            <p className="text-[12px] px-8 p-6 flex ">
               ©2024 Lucas Mobley <br /> <br /> Photography Inc. // Seattle{" "}
               <br /> <br /> Washington // 206-455-5978
             </p>
@@ -102,7 +102,7 @@ export default function TemporaryDrawer() {
         <React.Fragment key={anchor}>
           <Button
             onClick={toggleDrawer(anchor, true)}
-            sx={{ color: "black", marginLeft: "70px", marginTop: "80px" }}
+            sx={{ color: "black", marginTop: "80px" }}
           >
             MENU
           </Button>
