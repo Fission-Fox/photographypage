@@ -1,203 +1,138 @@
-import React from "react";
-import Image from "next/image";
-import image1 from "@/assets/images/image 1.png";
-import image2 from "@/assets/images/image 2.png";
+// import { CheckIcon } from '@heroicons/react/20/solid'
 import Checkbox from "@/assets/svg/checkbox";
 
-export default function Pricing() {
+const tiers = [
+  {
+    name: "Freelancer",
+    id: "tier-freelancer",
+    href: "#",
+    priceMonthly: "$24",
+    description: "The essentials to provide your best work for clients.",
+    features: [
+      "5 products",
+      "Up to 1,000 subscribers",
+      "Basic analytics",
+      "48-hour support response time",
+    ],
+    mostPopular: false,
+  },
+  {
+    name: "Startup",
+    id: "tier-startup",
+    href: "#",
+    priceMonthly: "$32",
+    description: "A plan that scales with your rapidly growing business.",
+    features: [
+      "25 products",
+      "Up to 10,000 subscribers",
+      "Advanced analytics",
+      "24-hour support response time",
+      "Marketing automations",
+    ],
+    mostPopular: true,
+  },
+  {
+    name: "Enterprise",
+    id: "tier-enterprise",
+    href: "#",
+    priceMonthly: "$48",
+    description: "Dedicated support and infrastructure for your company.",
+    features: [
+      "Unlimited products",
+      "Unlimited subscribers",
+      "Advanced analytics",
+      "1-hour, dedicated support response time",
+      "Marketing automations",
+    ],
+    mostPopular: false,
+  },
+];
+
+function classNames(...classes: any) {
+  return classes.filter(Boolean).join(" ");
+}
+
+export default function Example() {
   return (
-    <div className="w-[50%] h-[full]  m-auto box-shadow: 0px 4px 4px 0px #00000040;">
-      <div className="py-3">
-        <div className="text-[32px] font-bold text-center">Pricing</div>
-        <div className="text-[16px] text-center">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page <br /> when looking at its layout.{" "}
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            Pricing
+          </h2>
+          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Pricing plans for teams of&nbsp;all&nbsp;sizes
+          </p>
         </div>
-      </div>
-
-      <div className="flex items-center">
-        <div className="flex flex-col  shadow-xl w-[284px] h-[472px] bg-white py-20">
-          <div>
-            <p className="text-center font-bold text-[14px]">BRONZE</p>
-          </div>
-
-          <div className="flex justify-center">
-            <p className=" text-[16px] py-3 text-[#8F8A8A]">$</p>
-            <p className="font-bold text-[30px] ">99.99</p>
-            <p className="text-[16px] py-3 text-[#8F8A8A]">/Year</p>
-          </div>
-          <div className="px-">
-            <div className="flex flex-col text-[14px]  gap-2 py-5 ">
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Detail Page
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Rating and Reviews
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Email
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Url
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Phone
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Additional Phone
-              </p>
-              <p className="text-[#17BFE6] text-[14px]  px-3"> Read More </p>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+          Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
+          quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
+        </p>
+        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {tiers.map((tier, tierIdx) => (
+            <div
+              key={tier.id}
+              className={classNames(
+                tier.mostPopular ? "lg:z-10 lg:rounded-b-none" : "lg:mt-8",
+                tierIdx === 0 ? "lg:rounded-r-none" : "",
+                tierIdx === tiers.length - 1 ? "lg:rounded-l-none" : "",
+                "flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10",
+              )}
+            >
+              <div>
+                <div className="flex items-center justify-between gap-x-4">
+                  <h3
+                    id={tier.id}
+                    className={classNames(
+                      tier.mostPopular ? "text-indigo-600" : "text-gray-900",
+                      "text-lg font-semibold leading-8",
+                    )}
+                  >
+                    {tier.name}
+                  </h3>
+                  {tier.mostPopular ? (
+                    <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                      Most popular
+                    </p>
+                  ) : null}
+                </div>
+                <p className="mt-4 text-sm leading-6 text-gray-600">
+                  {tier.description}
+                </p>
+                <p className="mt-6 flex items-baseline gap-x-1">
+                  <span className="text-4xl font-bold tracking-tight text-gray-900">
+                    {tier.priceMonthly}
+                  </span>
+                  <span className="text-sm font-semibold leading-6 text-gray-600">
+                    /month
+                  </span>
+                </p>
+                <ul
+                  role="list"
+                  className="mt-8 space-y-3 text-sm leading-6 text-gray-600"
+                >
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <Checkbox />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <a
+                href={tier.href}
+                aria-describedby={tier.id}
+                className={classNames(
+                  tier.mostPopular
+                    ? "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
+                    : "text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300",
+                  "mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+                )}
+              >
+                Buy plan
+              </a>
             </div>
-            <div className="flex  px-2">
-              <button className="border border-[#8F8A8A] w-[224px]  mt-5 rounded-sm text-[#8F8A8A] font-semibold py-2">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col  shadow-xl w-[284px] h-[472px] bg-white py-20">
-          <div>
-            <p className="text-center font-bold text-[14px]">SILVER</p>
-          </div>
-
-          <div className="flex justify-center">
-            <p className=" text-[16px] py-3 text-[#8F8A8A]">$</p>
-            <p className="font-bold text-[30px] ">199.99</p>
-            <p className="text-[16px] py-3 text-[#8F8A8A]">/Year</p>
-          </div>
-          <div className="px-">
-            <div className="flex flex-col text-[14px]  gap-2 py-5 ">
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Detail Page
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Rating and Reviews
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Email
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Url
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Phone
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Additional Phone
-              </p>
-              <p className="text-[#17BFE6] text-[14px]  px-3"> Read More </p>
-            </div>
-            <div className="flex  px-2">
-              <button className="border border-[#8F8A8A] w-[224px]  mt-5 rounded-sm text-[#8F8A8A] font-semibold py-2">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col  shadow-xl w-[284px] h-[512px] bg-white  pt-20">
-          <div className="flex flex-col items-center ">
-            <p className=" bg-[#ffb348] w-28 text-[12px] ">Recommended</p>
-            <p className="text-center font-bold text-[14px]">GOLD</p>
-          </div>
-
-          <div className="flex justify-center">
-            <p className=" text-[16px] py-3 text-[#8F8A8A]">$</p>
-            <p className="font-bold text-[30px] ">349.99</p>
-            <p className="text-[16px] py-3 text-[#8F8A8A]">/Year</p>
-          </div>
-          <div className="px-">
-            <div className="flex flex-col text-[14px]  gap-2 py-1 ">
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Detail Page
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Rating and Reviews
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Email
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Url
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Phone
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Additional Phone
-              </p>
-              <p className="text-[#17BFE6] text-[14px]  px-3"> Read More </p>
-            </div>
-            <div className="flex  px-2">
-              <button className="border border-[#8F8A8A] w-[224px]  mt-14 rounded-sm text-[#8F8A8A] font-semibold py-2  ">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col  shadow-xl w-[284px] h-[472px] bg-white py-20">
-          <div>
-            <p className="text-center font-bold text-[14px]">Diamond</p>
-          </div>
-
-          <div className="flex justify-center">
-            <p className=" text-[16px] py-3 text-[#8F8A8A]">$</p>
-            <p className="font-bold text-[30px] ">544.99</p>
-            <p className="text-[16px] py-3 text-[#8F8A8A]">/Year</p>
-          </div>
-          <div className="px-">
-            <div className="flex flex-col text-[14px]  gap-2 py-5 ">
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Detail Page
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Rating and Reviews
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Email
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Url
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Phone
-              </p>
-              <p className="px-3 flex gap-2">
-                <Checkbox />
-                Additional Phone
-              </p>
-              <p className="text-[#17BFE6] text-[14px]  px-3"> Read More </p>
-            </div>
-            <div className="flex  px-2 ">
-              <button className="border border-[#8F8A8A] w-[224px]  mt-5 rounded-sm text-[#8F8A8A] font-semibold py-2">
-                Contact Us
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
