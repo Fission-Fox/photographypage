@@ -30,16 +30,15 @@ export default function Header() {
   }, [lastScroll, scrollingDown]);
 
   return (
-    <nav className="!hidden md:!flex">
+    <nav className="!hidden md:!flex ">
       <div
         id="scroll-header"
         className={`flex items-center justify-center gap-10 xl:gap-20  py-7 w-full fixed transition-all duration-300 top-0
-                text-[14px] lg:text-[20px]
-            ${
-              scrollingDown
-                ? "bg-[rgba(255,255,255,0.8)] bg-opacity-20 transform translate-y-0"
-                : "bg-transparent"
-            }`}
+                text-[14px] lg:text-[20px] z-[999]
+            ${scrollingDown
+            ? "bg-[rgba(255,255,255,0.8)] bg-opacity-20 transform translate-y-0"
+            : "bg-transparent"
+          }`}
       >
         <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
         <h1 className="text-[#3c3c3c]  cursor-pointer">Home</h1>
