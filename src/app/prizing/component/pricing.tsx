@@ -57,7 +57,7 @@ export default function Example() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">
+          <h2 className="text-base font-semibold leading-7 text-black">
             Pricing
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -84,14 +84,14 @@ export default function Example() {
                   <h3
                     id={tier.id}
                     className={classNames(
-                      tier.mostPopular ? "text-indigo-600" : "text-gray-900",
+                      tier.mostPopular ? "text-black" : "text-gray-900",
                       "text-lg font-semibold leading-8",
                     )}
                   >
                     {tier.name}
                   </h3>
                   {tier.mostPopular ? (
-                    <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">
+                    <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-black">
                       Most popular
                     </p>
                   ) : null}
@@ -124,12 +124,12 @@ export default function Example() {
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
-                    : "text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300",
-                  "mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+                    ? "bg-black text-white shadow-sm hover:bg-white hover:text-black hover:ring-black hover:border-[1px] hover:border-[black]"
+                    : "text-black ring-1 ring-inset ring-black  hover:bg-black hover:text-white hover:ring-black ",
+                  "mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black",
                 )}
               >
-                Buy plan
+                CONTACT US
               </a>
             </div>
           ))}
