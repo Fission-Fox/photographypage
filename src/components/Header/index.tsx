@@ -15,7 +15,7 @@ export default function Header() {
       if (currentScroll > lastScroll && !scrollingDown) {
         // Scroll down, hide the header
         setScrollingDown(true);
-      } else if (currentScroll < lastScroll && scrollingDown) {
+      } else if (currentScroll < 1 && scrollingDown) {
         // Scroll up, show the header
         setScrollingDown(false);
       }
@@ -32,33 +32,45 @@ export default function Header() {
 
   return (
     <>
-      <nav className="!hidden md:!flex">
+      <nav className="!hidden md:!flex fixed " style={{ zIndex: 5 }}>
         <div
           id="scroll-header"
           className={`flex items-center justify-center gap-10 xl:gap-20  py-7 w-full fixed transition-all duration-300 top-0
-                text-[14px] lg:text-[20px]
+                text-[0.6875rem] lg:text-[20px] font-light
             ${
               scrollingDown
                 ? "bg-[rgba(255,255,255,0.8)] bg-opacity-20 transform translate-y-0"
                 : "bg-transparent"
             }`}
         >
-          <h1 className="text-[#3c3c3c]  cursor-pointer">HOME</h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer">MY STORY</h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer">PORTFOLIO</h1>
-
+          <h1 className="text-[#3c3c3c]   cursor-pointer text-[0.6875rem] lg:text-[20px] ">
+            Home
+          </h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
           <Image
             src={logo}
             className="w-[139px] h-[139px] object-cover "
             alt=""
           />
-
-          <h1 className="text-[#3c3c3c]  cursor-pointer">PRICING</h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer">CONTACT</h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
+          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+            Home
+          </h1>
         </div>
       </nav>
-
-      {/* mobile navbar */}
       <Mobilenav />
     </>
   );
