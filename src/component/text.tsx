@@ -3,7 +3,12 @@ import React from "react";
 export default function Text() {
   return (
     <div className="flex flex-col items-center mb-9 pt-10">
-      <div className="text-[31px]">Let's text!</div>
+      <div
+        className="text-[31px] font-light"
+        style={{ fontFamily: "Sorts Mill Goudy" }}
+      >
+        Let's text!
+      </div>
       <div className="mt-8">Message</div>
       <div className="border-b-2">
         <input
@@ -12,7 +17,7 @@ export default function Text() {
         />
       </div>
 
-      <div className="mt-8">Name</div>
+      <div className="mt-8 font-light">Name</div>
       <div className="border-b-2">
         <input
           type="text"
@@ -20,7 +25,7 @@ export default function Text() {
         />
       </div>
 
-      <div className="mt-8">Phone number</div>
+      <div className="mt-8 font-light">Phone number</div>
       <div className="border-b-2">
         <input
           type="email"
@@ -28,7 +33,7 @@ export default function Text() {
         />
       </div>
 
-      <div className="mt-14 border px-20 py-4 hover:bg-black hover:text-white text-[20px]">
+      <div className="mt-14 border px-20 py-4 hover:bg-black hover:text-white text-[20px] !font-light">
         <button>SEND</button>
       </div>
     </div>

@@ -11,13 +11,13 @@ export default function Footer() {
           <button className="text-[20px]">@LUCASMOBLEY</button>
         </div>
       </div>
-      <div className="flex flex-wrap  justify-evenly mt-8 gap-3">
+      <div className="flex flex-wrap  justify-evenly items-center mt-8 gap-3 ml-6 sm:ml-28 lg::ml-76">
         <div className="flex gap-4">
           <FacebookIcon />
           <InstagramIcon />
           <TwitterIcon />
         </div>
-        <div className="text-center text-[20px]">
+        <div className="text-center text-[20px] !font-light">
           Subscribe to my <br />
           newsletter
         </div>
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center mt-6 ">
+      <div className="text-center mt-20  mb-20 !font-light">
         ©2024 Lucas Mobley Photography Inc. // Seattle Washington //
         206-455-5978
       </div>
