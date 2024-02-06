@@ -1,9 +1,8 @@
-import Image from "next/image";
-import React, { useState } from "react";
 import heroimage from "@/assets/Image/herosection1.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import Image from "next/image";
 import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import './styles.css';
 // Import Swiper styles
