@@ -1,11 +1,10 @@
+import adventure from "@/assets/Image/1.jpg";
+import sarahdan from "@/assets/Image/10.jpg";
+import dansarah from "@/assets/Image/2.jpg";
+import nathan from "@/assets/Image/3.jpg";
+import photographer from "@/assets/Image/4.jpg";
+import tintypes from "@/assets/Image/6.jpg";
 import Image from "next/image";
-import React from "react";
-import adventure from "@/assets/Image/adventures1.jpg";
-import sarahdan from "@/assets/Image/sarah&dan1.jpg";
-import tintypes from "@/assets/Image/tintypes1.jpg";
-import photographer from "@/assets/Image/photographer1.jpg";
-import nathan from "@/assets/Image/nathan1.jpg";
-import dansarah from "@/assets/Image/dan&sarah1.jpg";
 export default function Images() {
   return (
     <div className="mt-32">

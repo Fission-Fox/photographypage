@@ -1,6 +1,5 @@
-import Image from "next/image";
-import React from "react";
 import tree from "@/assets/Image/tree1.jpg";
+import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -8,9 +7,9 @@ export default function Portfolio() {
       <hr />
 
       <div className="flex justify-center pt-28">
-        <div className="hover:bg-black hover:text-white text-[10px] sm:text-[20px] px-3 sm:px-14 py-4 border !font-light">
+        {/* <div className="hover:bg-black hover:text-white text-[10px] sm:text-[20px] px-3 sm:px-14 py-4 border !font-light">
           <button>EXPLORE MY PORTFOLIO</button>
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-center  mt-28 pl-20 pr-20">
         <div className="border-black border-t mt-8 w-[90%] mr-10 "></div>

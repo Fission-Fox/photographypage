@@ -43,31 +43,18 @@ export default function Header() {
                 : "bg-transparent"
             }`}
         >
-          <h1 className="text-[#3c3c3c]   cursor-pointer text-[0.6875rem] lg:text-[20px] ">
-            Home
-          </h1>
           <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
+            About Us
           </h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
-          </h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
-          </h1>
+
           <Image
             src={logo}
             className="w-[139px] h-[139px] object-cover "
             alt=""
           />
+
           <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
-          </h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
-          </h1>
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
-            Home
+            Packages
           </h1>
         </div>
       </nav>

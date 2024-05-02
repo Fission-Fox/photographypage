@@ -1,7 +1,6 @@
-import React from "react";
-import Image from "next/image";
+import vanlife from "@/assets/Image/9.jpg";
 import leave from "@/assets/Image/leave1.jpg";
-import vanlife from "@/assets/Image/vanlife1.jpg";
+import Image from "next/image";
 export default function Vanlife() {
   return (
     <div className="w-full mb-20">

@@ -1,4 +1,4 @@
-import heroimage from "@/assets/Image/img.png";
+import heroimage from "@/assets/Image/img.jpg";
 import Image from "next/image";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";

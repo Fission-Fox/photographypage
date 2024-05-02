@@ -1,8 +1,7 @@
+import stephan from "@/assets/Image/12.jpg";
 import Image from "next/image";
-import React from "react";
-import stephan from "@/assets/Image/stephan1.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Realword() {
   return (
