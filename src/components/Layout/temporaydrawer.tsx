@@ -1,22 +1,14 @@
-import React from "react";
-import Image from "next/image";
 import logo from "@/assets/Image/designpartnerlogo1.png";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { colors } from "@mui/material";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 type Anchor = "right";
 
@@ -55,15 +47,12 @@ export default function TemporaryDrawer() {
 
           <div className="">
             <ul className="text-[12px]  m-10 flex flex-col gap-6 ">
-              <li>HOME</li>
+              <Link href={"/"}>Home</Link>
               <hr className="border-gray-500 w-48" />
-              <li className="flex justify-between">
-                MY STORY <ArrowRightIcon />
-              </li>
-              <hr className="border-gray-500 w-48" />
-              <li className="flex justify-between">
-                PORTFOLIO <ArrowRightIcon />
-              </li>
+              <Link href={"/mystory"} className="flex justify-between">
+                About Us
+              </Link>
+
               {/* <hr className="border-gray-500 w-48" />
               <li className="flex justify-between">
                 JOURNAL <ArrowRightIcon />
@@ -73,12 +62,9 @@ export default function TemporaryDrawer() {
                 TINTYPES <ArrowRightIcon />{" "}
               </li> */}
               <hr className="border-gray-500 w-48" />
-              <li className="flex justify-between">
-                PRICING
-                <ArrowRightIcon />
-              </li>
-              <hr className="border-gray-500 w-48" />
-              <li>CONTACT</li>
+              <Link href="/pricing" className="flex justify-between">
+                Packages
+              </Link>
             </ul>
           </div>
           <div className="flex gap-6 px-8 p-10">
@@ -88,8 +74,8 @@ export default function TemporaryDrawer() {
           </div>
           <div>
             <p className="text-[12px] px-8 p-6 flex ">
-              ©2024 Lucas Mobley <br /> <br /> Photography Inc. // Seattle{" "}
-              <br /> <br /> Washington // 206-455-5978
+              ©2024 Dream Filmers <br /> <br /> Photography Inc.
+              <br /> <br />
             </p>
           </div>
         </div>

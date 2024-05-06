@@ -2,6 +2,7 @@
 // import LogoLight from "@/assets/images/logo-light.png";
 import logo from "@/assets/Image/designpartnerlogo1.png";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Mobilenav from "../Layout/mobilenav";
 export default function Header() {
@@ -43,19 +44,27 @@ export default function Header() {
                 : "bg-transparent"
             }`}
         >
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+          <Link
+            href={"/mystory"}
+            className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]"
+          >
             About Us
-          </h1>
+          </Link>
 
-          <Image
-            src={logo}
-            className="w-[139px] h-[139px] object-cover "
-            alt=""
-          />
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              className="w-[139px] h-[139px] object-cover "
+              alt=""
+            />
+          </Link>
 
-          <h1 className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]">
+          <Link
+            href={"/pricing"}
+            className="text-[#3c3c3c]  cursor-pointer hover:underline text-[0.6875rem] lg:text-[20px]"
+          >
             Packages
-          </h1>
+          </Link>
         </div>
       </nav>
       <Mobilenav />
